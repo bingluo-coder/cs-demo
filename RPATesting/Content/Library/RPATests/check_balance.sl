@@ -29,7 +29,7 @@ extensions:
     steps:
       trigger_robottst:
         x: 39
-        y: 130
+        'y': 130
         navigate:
           4f6c1850-b99e-5524-7c7d-d29fd2632c5c:
             targetId: ad737f48-0df3-4d56-ab02-3e24ce168bfe
@@ -40,9 +40,9 @@ extensions:
     results:
       FAILURE:
         fcd4f52e-a2aa-5a2f-034f-6b69758a848a:
-          x: 38
-          y: 372
+          x: 382
+          'y': 293
       SUCCESS:
         ad737f48-0df3-4d56-ab02-3e24ce168bfe:
           x: 406
-          y: 135
+          'y': 135

@@ -122,18 +122,18 @@ extensions:
   graph:
     steps:
       create_trigger_robot_vb_script:
-        x: 51
-        y: 78
+        x: 53
+        'y': 79
       trigger_vb_script:
         x: 344
-        y: 76
+        'y': 76
         navigate:
           5293e98c-9837-4a9c-5837-1f7938b48b31:
             targetId: 023c90fc-05ed-adf3-eb3c-da02c1f4333a
             port: SUCCESS
       delete_vb_script_1:
         x: 585
-        y: 242
+        'y': 242
         navigate:
           6585b707-8ed3-ad4a-4c92-06a5c32e5b7a:
             targetId: 9075912d-0472-2f13-bd04-f716ea7744ed
@@ -142,8 +142,8 @@ extensions:
       FAILURE:
         9075912d-0472-2f13-bd04-f716ea7744ed:
           x: 823
-          y: 231
+          'y': 231
       SUCCESS:
         023c90fc-05ed-adf3-eb3c-da02c1f4333a:
           x: 824
-          y: 83
+          'y': 83
