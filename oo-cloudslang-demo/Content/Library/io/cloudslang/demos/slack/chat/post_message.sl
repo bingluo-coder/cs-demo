@@ -89,6 +89,12 @@ flow:
         do:
           http.http_client_post:
             - url: 'https://slack.com/api/chat.postMessage'
+            - proxy_host: '${proxy_host}'
+            - proxy_port: '${proxy_port}'
+            - proxy_username: '${proxy_username}'
+            - proxy_password:
+                value: '${proxy_password}'
+                sensitive: true
             - trust_keystore
             - trust_password
             - keystore
@@ -116,7 +122,7 @@ extensions:
     steps:
       trigger_post:
         x: 100
-        y: 150
+        'y': 150
         navigate:
           57d4af2b-619b-23dd-0fb2-e4e8785b30c6:
             targetId: 9ad4963d-33f9-a8fa-e6ed-f64f67aeab75
@@ -125,4 +131,4 @@ extensions:
       SUCCESS:
         9ad4963d-33f9-a8fa-e6ed-f64f67aeab75:
           x: 400
-          y: 150
+          'y': 150
