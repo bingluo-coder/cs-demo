@@ -1,11 +1,13 @@
 namespace: HKEnablement-Demo
 flow:
   name: calc_conversion_main
+  inputs:
+    - acres_input: '7'
   workflow:
     - calc_conversion:
         do:
           HKEnablement-Demo.calc_conversion:
-            - acres_input: '3.4'
+            - acres_input: '${acres_input}'
         publish:
           - square_meters_output
         navigate:
